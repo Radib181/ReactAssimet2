@@ -5,6 +5,7 @@ function Incidents() {
   return (
     <section>
       <Header></Header>
+      
     </section>
   )
 }

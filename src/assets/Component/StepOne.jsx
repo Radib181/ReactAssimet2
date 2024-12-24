@@ -7,7 +7,7 @@ import Frame3 from '../Photos/frame.png';
 import Dasbord from './Dasbord';
 
 function Step() {
-  const CardDetails = [
+  const CardDetails =[
     {
       img: Frame1,
       title: "What type of incident?",

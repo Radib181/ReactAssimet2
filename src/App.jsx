@@ -8,6 +8,9 @@ import Incidents from './assets/Component/Incidents'; // Ensure this component e
 import Error from "./assets/Component/Error";
 import NewIncident from "./assets/Component/NewIncident"
 import Step from "./assets/Component/StepOne";
+import Step2 from "./assets/Component/Step2"
+import BackNext from "./assets/Component/BackNext"
+
 
 function App() {
   return (
@@ -22,10 +25,14 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} /> 
           <Route path="/" element={<Dashboard />} /> 
           <Route path="new-incident" element={<Step  />} />
+          <Route path="new-incident" element={<Step2  />} />
+          <Route path="new-incident" element={<BackNext/>}/>
+          <Route path="/locations" element={<BackNext/>}/>
           <Route path="*" element={<Error />} />
+         
           <Route path="NewIncident" element={<NewIncident />} />
           <Route path="/new-incident" element={<NewIncident />} /> {/* New Incident পেজ */}
-
+         
         </Routes>
       </BrowserRouter>
       {/* Unused code commented for clarity */}
@@ -39,3 +46,5 @@ function App() {
 }
 
 export default App;
+
+
